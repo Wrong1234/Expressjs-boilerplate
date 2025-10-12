@@ -1,6 +1,6 @@
 import express from "express";
 import db from "./utils/dbConnection.js";
-import hostRouter from "./routes/signup.js";
+import router from "./routes/authRouter.js";
 // import hostRouter from "./routes/signup.js";
 
 
@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
   });
 });
 
-app.use("/user", hostRouter);
+app.use("/user", router);
 
 const PORT = 3000;
 const url =
