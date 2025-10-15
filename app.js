@@ -30,4 +30,4 @@ const server = async () => {
   }
 };
 
-server();
+server(); 
